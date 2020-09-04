@@ -10,7 +10,7 @@ ____________________________________________________________________________
 ____________________________________________________________________________
 
 1 - Criar um projeto wm Windows Forms Applications
-2 - Copiar e colar o exercicio_1.cs e exercicio_1.Designer.cs
+2 - Copiar e colar o [nome_do_arquivo].cs e [nome_do_arquivo].Designer.cs
 3 - Compilar
 
 **Pode ocorrer erros se sua versão for diferente da minha
