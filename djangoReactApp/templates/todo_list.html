@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="text-center">
+    <p>
+      {% if request.user.is_authenticated%}
+        Olá amigo {{request.user.username}}
+      {%else%} 
+        Olá inimigo mortal do menino ney 
+      {% endif%}
+    </p>
+    <a class="btn btn-outline-primary" href="/create-task"> Crie as tarefas</a>
+  </div>
+  <div class="col-4 offset-4">
+    {% for todo in todo_list %} 
+      <div class="card mt-3">
+
+        <div class="card-header">
+          <a href="/{{todo.id}}"><h4>{{todo.name}}</h4></a>
+        </div>
+
+        <div class="card-body">
+        <p>
+          é uma tarefa digna {{todo.due_dt}}
+        </p>
+      </div>
+    {% endfor%}
+  </div>
+
+{% endblock %}

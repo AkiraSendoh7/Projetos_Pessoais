@@ -1,0 +1,12 @@
+
+    <h4> Create a todo </h4>
+
+    <form method="POST">
+        {% csrf_token %}
+          <label>Lista de atividades</label>
+          <input type="text" name="name" placeholder="nome da tarefa">
+          <input type="date" name="due_dt" placeholder="data da tarefa">
+          <button type="submit"> Enviar </button>
+    </form>
+  </body>
+</html>
