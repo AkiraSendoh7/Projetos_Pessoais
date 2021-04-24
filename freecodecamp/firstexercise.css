@@ -8,7 +8,8 @@ html {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -35,6 +36,10 @@ header {
   text-align: center;
 }
 
+hr {
+  line-height: 1em;
+}
+
 /* Layout */
 #main {
   width: 95%;
@@ -43,59 +48,72 @@ header {
   background: #eee;
 }
 
-.img-div, .tribute-info {
+.img-div,
+.tribute-info {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin: 1em 0;
-} 
+  max-width: 100%;
+}
 
 #image {
-  max-width: 100%;
   display: block;
   height: auto;
   margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
-/* Aparências */
+#img-caption {
+  font-size: 1.2rem;
+  text-align: end;
+}
+/* 
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+} */
+
+/* Fotos */
 #dr-hiriluk-anime-art {
-  width: 50%;
+  max-width: 20rem;
   margin: 0 auto;
   border: 0.1rem solid darkslategray;
 }
 
 #dr-hiriluk-manga-art {
-  width: 50%;
+  width: 20rem;
   margin: 0 auto;
-  border: 0.2rem solid black;
+  border: 0.1rem solid darkslategray;
 }
 
-
 #img-anime-art {
-  text-align: center; 
-  vertical-align: middle; 
+  text-align: center;
+  vertical-align: middle;
   padding: 0px;
 }
 
-.tribute-info {
-  text-align: center;
-  margin: 0.7rem 0;
-}
-
-#tribute-gallery-appearance { 
-  width: 17.2rem;  
-  height: 17.2rem;
-  border-spacing:0;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-#tribute-gallery-information {
-  display: inline-block;
-  vertical-align: top;
-  width: 100rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
+/* 
+@media (max-width: 600px) {
+  .tribute-info {
+    flex-direction: row-reverse;
+  }
+  
+} */
 
 /* Link para acessar o site */
 
@@ -111,3 +129,5 @@ header {
 #tribute-link:hover {
   color: dodgerblue;
 }
+
+/* Menu de navegação */
